@@ -1,0 +1,15 @@
+[user]
+	name = Graham Mackie
+	email = mackieg@umich.edu
+	neam = gmackie
+[color]
+	branch = always
+	diff = always
+	interactive = always
+	status = always
+	ui = always
+[core]
+	editor = vim
+[merge]
+	tool = opendiff
+

@@ -263,4 +263,8 @@ settings = {
     nick = "gmackie";
   };
   "fe-text" = { actlist_sort = "refnum"; };
+  "fe-common/core" = { theme = "xchat2.theme"; autolog = "yes"; };
 };
+keyboard = ( 
+  { key = "meta-[M"; id = "command"; data = "mouse_xterm "; }
+);

@@ -1,0 +1,14 @@
+[2013-08-21 12:58:54] WeeChat 0.4.0 (compiled on Jan 31 2013 21:29:31)
+[2013-08-21 12:58:54] Reading configuration file weechat.conf
+[2013-08-21 12:58:54] Reading configuration file plugins.conf
+[2013-08-21 12:58:55] Reading configuration file xfer.conf
+[2013-08-21 12:58:55] Reading configuration file charset.conf
+[2013-08-21 12:58:55] Reading configuration file script.conf
+[2013-08-21 12:58:55] Reading configuration file alias.conf
+[2013-08-21 12:58:55] Reading configuration file irc.conf
+[2013-08-21 12:58:55] irc: connecting to server dongs.in/6667...
+[2013-08-21 12:58:55] irc: connecting to server dongs.in/6667...
+[2013-08-21 12:58:55] Reading configuration file aspell.conf
+[2013-08-21 12:58:55] Reading configuration file relay.conf
+[2013-08-21 12:58:55] Reading configuration file logger.conf
+[2013-08-21 12:58:56] Reading configuration file rmodifier.conf

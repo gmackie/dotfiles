@@ -1,4 +1,1 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/rhel5pdi/workplace/mackieg/OrientationDemoService/build/OrientationDemoService/OrientationDemoService-1.0/RHEL5_64/DEV.STD.PTHREAD/build/private/classes/generated/com/amazon/demo'
-let g:netrw_dirhist_2='/home/mackieg/motion'

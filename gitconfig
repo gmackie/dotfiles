@@ -13,3 +13,5 @@
 [merge]
 	tool = opendiff
 
+[pager]
+	branch = false

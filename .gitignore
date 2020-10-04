@@ -1,3 +1,4 @@
 weechat/irc.conf
 weechat/logs
-vim/bundle
+vim/bundle/*
+!vim/bundle/Vundle.vim

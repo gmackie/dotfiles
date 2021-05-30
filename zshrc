@@ -55,6 +55,7 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="$PATH:$(yarn global bin)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -63,5 +64,6 @@ export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/fpga-toolchain/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="/home/mackieg/.pyenv/bin:$PATH"
+export PATH="/home/mackieg/.dotnet:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"

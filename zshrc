@@ -12,7 +12,7 @@ ZSH=$HOME/.oh-my-zsh
 export TERM=xterm-256color
 
 alias gits="git status && git branch -vv"
-alias gitt="git log --color --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %CGreen(%cr) %C(bold blue)<%an>%Creset' --decorate --branches"
+alias gitt="git log --color --graph --pretty=format:'%Cred%h%Creset-%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --decorate --branches"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 

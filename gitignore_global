@@ -4,3 +4,8 @@
 
 # VSCode Workspcace files
 *.code-workspace
+
+.DS_Store
+
+dist/
+node_modules/

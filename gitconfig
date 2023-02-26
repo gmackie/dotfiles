@@ -10,6 +10,7 @@
 	ui = always
 [core]
 	editor = vim
+	excludesfile = /Users/mackieg/.gitignore_global
 [merge]
 	tool = opendiff
 

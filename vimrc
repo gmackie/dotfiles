@@ -15,6 +15,11 @@ Plugin 'groenewege/vim-less'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'ervandew/supertab'
+Plugin 'pangloss/vim-javascript'    " JavaScript support
+Plugin 'leafgarland/typescript-vim' " TypeScript syntax
+Plugin 'maxmellon/vim-jsx-pretty'   " JS and JSX syntax
+Plugin 'jparise/vim-graphql'        " GraphQL syntax
+Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 " Plugin 'marijnh/tern_for_vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -23,6 +28,8 @@ let NERDTreeShowHidden=1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='murmur'
+let g:coc_global_extensions = ['coc-tsserver']
+
 map <C-o> :NERDTreeToggle<CR>
 set number
 set cursorline

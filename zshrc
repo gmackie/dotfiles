@@ -65,3 +65,7 @@ eval "$(rbenv init -)"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh" || true
 
+
+# Icicle https://github.com/nishtahir/icicle/
+export PATH=/Users/mackieg/.icicle:$PATH
+eval "`icicle env`"

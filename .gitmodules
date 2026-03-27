@@ -7,3 +7,6 @@
 [submodule "vim/pack/github/start/copilot.vim"]
 	path = vim/pack/github/start/copilot.vim
 	url = https://github.com/github/copilot.vim
+[submodule "config/nvim"]
+	path = config/nvim
+	url = git@github.com:gmackie/conf.nvim.git

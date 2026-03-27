@@ -1,7 +1,8 @@
 #!/bin/bash
 ############################
 # .make.sh
-# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles
+# This script creates symlinks from the home directory to any desired dotfiles in ~/dotfiles.
+# It also links XDG config under ~/.config for repos now living in config/.
 ############################
 
 ########## Variables
@@ -9,7 +10,8 @@
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
 files="bashrc vimrc vim zshrc oh-my-zsh gitignore_global screenrc
-gitconfig weechat"    # list of files/folders to symlink in homedir
+gitconfig weechat p10k.zsh taskrc"                # list of files/folders to symlink in homedir
+config_files="nvim tmux"          # list of config/ entries to symlink under ~/.config
 ##########
 
 # create dotfiles_old in homedir
@@ -22,12 +24,29 @@ echo -n "Changing to the $dir directory ..."
 cd $dir
 echo "done"
 
+echo "Initializing nested submodules if needed ..."
+git submodule update --init --recursive
+echo "done"
+
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks from the homedir to any files in the ~/dotfiles directory specified in $files
 for file in $files; do
     echo "Moving any existing dotfiles from ~ to $olddir"
     mv ~/.$file $olddir
     echo "Creating symlink to $file in home directory."
     ln -s $dir/$file ~/.$file
+done
+
+# Link XDG config for dotfiles now stored under config/.
+mkdir -p ~/.config
+for file in $config_files; do
+    if [ -e "$dir/config/$file" ]; then
+        if [ -e "$HOME/.config/$file" ]; then
+            echo "Moving any existing $file config from ~/.config to $olddir"
+            mv "$HOME/.config/$file" "$olddir"
+        fi
+        echo "Creating symlink to config/$file in ~/.config."
+        ln -s "$dir/config/$file" "$HOME/.config/$file"
+    fi
 done
 
 function install_zsh {
